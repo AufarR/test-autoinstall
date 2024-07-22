@@ -42,9 +42,9 @@ autoinstall:
         ssh_import_id:
           - gh:aufarr
         lock_passwd: false
-        passwd: "\$2y\$05\$/EtYIpZpCjNzYksExTH8CON4vm9rmhCQdjRPMu6CGXi2KLLmgZ.FG"
+        passwd: \$2y\$05\$/EtYIpZpCjNzYksExTH8CON4vm9rmhCQdjRPMu6CGXi2KLLmgZ.FG
       - name: beta
         gecos: Beta
         sudo: False
         lock_passwd: false
-        passwd: "\$2y\$05\$xiseOxR1f1UMGLzXeUrWZuVgunmF7X5pf/DfOLQw8Fd1UvRzLPGLe"
+        passwd: \$2y\$05\$xiseOxR1f1UMGLzXeUrWZuVgunmF7X5pf/DfOLQw8Fd1UvRzLPGLe
