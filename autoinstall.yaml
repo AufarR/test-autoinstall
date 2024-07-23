@@ -1,11 +1,9 @@
 autoinstall:
   version: 1
   locale: id-ID.UTF-8
-  storage:
-    config:
-      - type: partition
-        id: root-partition
-        size: -1
+  interactive:
+   - network
+   - storage
   ssh:
     install-server: true
 #  codecs:
