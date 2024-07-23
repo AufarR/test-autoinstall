@@ -8,7 +8,6 @@ autoinstall:
       name: direct
   ssh:
     install-server: true
-    authorized-keys: ["ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIAJPBwCRJyFQCtGTO88ago4kc6rJRbomOrVYJUq46KR2 aufarr@Mac"]
   codecs:
     install: true
   drivers:
