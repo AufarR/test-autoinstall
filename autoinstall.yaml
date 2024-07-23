@@ -1,8 +1,5 @@
 autoinstall:
   version: 1
-  interactive-sections:
-    - storage
-    - network
   locale: id-ID.UTF-8
   storage:
     layout:
