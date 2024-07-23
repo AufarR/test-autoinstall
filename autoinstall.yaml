@@ -1,9 +1,12 @@
 autoinstall:
   version: 1
   locale: id-ID.UTF-8
-  interactive:
+  interactive-sections:
    - network
    - storage
+#  storage:
+#    layout:
+#      name: direct
   ssh:
     install-server: true
 #  codecs:
