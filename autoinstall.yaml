@@ -9,11 +9,11 @@ autoinstall:
   ssh:
     install-server: true
   codecs:
-    install: true
+    install: false
   drivers:
-    install: true
+    install: false
   oem:
-    install: true
+    install: false
   packages:
     - gcc
     - ghc
@@ -21,7 +21,7 @@ autoinstall:
     - postgresql-client
     - mariadb-client
   timezone: geoip
-  updates: all
+  updates: security
   late-commands: []
   user-data:
     groups:
