@@ -3,24 +3,25 @@ autoinstall:
   locale: id-ID.UTF-8
   storage:
     layout:
-      name: direct
+      name: lvm
   ssh:
     install-server: true
-  codecs:
-    install: false
-  drivers:
-    install: false
-  oem:
-    install: false
-  packages:
-    - gcc
-    - ghc
-    - neovim
-    - postgresql-client
-    - mariadb-client
-  timezone: geoip
-  updates: security
-  late-commands: []
+#  codecs:
+#    install: true
+#  drivers:
+#    install: true
+#  oem:
+#    install: true
+#  packages:
+#    - gcc
+#    - ghc
+#    - neovim
+#    - postgresql-client
+#    - mariadb-client
+#  timezone: geoip
+  timezone: Asia/Jakarta
+#  updates: security
+#  late-commands: []
   user-data:
     groups:
       - docker: [alfa,beta]
@@ -28,8 +29,10 @@ autoinstall:
       - name: alfa
         gecos: Alfa
         sudo: ALL=(ALL) ALL
-        ssh_import_id:
-          - gh:aufarr
+        ssh_authorized_keys:
+         - ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIAJPBwCRJyFQCtGTO88ago4kc6rJRbomOrVYJUq46KR2 
+      #  ssh_import_id:
+      #    - gh:aufarr
         lock_passwd: false
         passwd: '$2y$05$/EtYIpZpCjNzYksExTH8CON4vm9rmhCQdjRPMu6CGXi2KLLmgZ.FG'
       - name: beta
